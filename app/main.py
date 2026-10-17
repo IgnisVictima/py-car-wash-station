@@ -6,12 +6,8 @@ class Car:
             clean_mark: int,
             brand: str
     ) -> None:
-        if isinstance(comfort_class, int):
-            if 1 <= comfort_class <= 7:
-                self.comfort_class = comfort_class
-        if isinstance(clean_mark, int):
-            if 1 <= clean_mark <= 10:
-                self.clean_mark = clean_mark
+        self.comfort_class = comfort_class
+        self.clean_mark = clean_mark
         self.brand = brand
 
 
@@ -22,12 +18,8 @@ class CarWashStation:
                  clean_power: int,
                  average_rating: float | int = 1.0,
                  count_of_ratings: int = 0) -> None:
-        if isinstance(distance_from_city_center, int):
-            if 1.0 <= distance_from_city_center <= 10.0:
-                self.distance_from_city_center = distance_from_city_center
-        if isinstance(average_rating, float | int):
-            if 5.0 >= average_rating >= 1.0:
-                self.average_rating = average_rating
+        self.distance_from_city_center = distance_from_city_center
+        self.average_rating = average_rating
         self.clean_power = clean_power
         self.count_of_ratings = count_of_ratings
 
